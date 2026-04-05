@@ -215,7 +215,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section id="how-it-works" style={{ padding: '140px 24px', maxWidth: '1100px', margin: '0 auto' }}>
+      <section id="how-it-works" style={{ padding: '120px 24px', maxWidth: '1100px', margin: '0 auto' }}>
         <div className="scroll-reveal" style={{ marginBottom: '80px' }}>
           <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>
             How it works
@@ -267,32 +267,34 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section style={{ padding: '120px 24px 180px', maxWidth: '1100px', margin: '0 auto' }}>
-        <div className="photos-grid scroll-reveal" style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr',
-          gap: '16px', height: 'clamp(400px, 55vw, 640px)'
-        }}>
-          <div className="photo-card" style={{ height: '100%' }}>
-            <img src="/photo3.jpg" alt="Team collaborating" />
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div className="photo-card" style={{ flex: 1 }}>
-              <img src="/photo1.jpg" alt="Working on laptop" />
+      <section style={{ padding: '120px 0', background: '#fff' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px' }}>
+          <div className="photos-grid" style={{
+            display: 'grid', gridTemplateColumns: '1fr 1fr',
+            gap: '20px', minHeight: 'clamp(400px, 55vw, 640px)'
+          }}>
+            <div className="photo-card" style={{ minHeight: 'clamp(400px, 55vw, 640px)' }}>
+              <img src="/photo3.jpg" alt="Team collaborating" />
             </div>
-            <div style={{
-              background: '#000', borderRadius: '12px', padding: '32px',
-              display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', flex: '0 0 180px'
-            }}>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '42px', fontWeight: '700', color: '#fff', lineHeight: '1', marginBottom: '8px' }}>500+</div>
-              <div style={{ fontSize: '13px', color: '#888', fontWeight: '400' }}>minutes free per month via Groq</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div className="photo-card" style={{ flex: 1 }}>
+                <img src="/photo1.jpg" alt="Working on laptop" />
+              </div>
+              <div style={{
+                background: '#000', borderRadius: '12px', padding: '32px',
+                display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', flex: '0 0 180px'
+              }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '42px', fontWeight: '700', color: '#fff', lineHeight: '1', marginBottom: '8px' }}>500+</div>
+                <div style={{ fontSize: '13px', color: '#888', fontWeight: '400' }}>minutes free per month via Groq</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="features" style={{ padding: '200px 24px 140px', background: '#fafafa', borderTop: '1px solid #f0f0f0' }}>
+      <section id="features" style={{ padding: '140px 24px 120px', background: '#fafafa', borderTop: '1px solid #f0f0f0' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div className="scroll-reveal" style={{ marginBottom: '80px' }}>
+          <div className="scroll-reveal" style={{ marginBottom: '80px', position: 'relative', zIndex: 1 }}>
             <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>Features</div>
             <h2 className="section-heading" style={{
               fontFamily: "'DM Sans', sans-serif",
@@ -324,7 +326,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section id="team" style={{ padding: '140px 24px', maxWidth: '1100px', margin: '0 auto' }}>
+      <section id="team" style={{ padding: '120px 24px', maxWidth: '1100px', margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div className="scroll-reveal">
             <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>The Team</div>
