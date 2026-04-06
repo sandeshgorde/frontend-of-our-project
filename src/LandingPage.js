@@ -326,50 +326,93 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section id="team" style={{ padding: '120px 24px', maxWidth: '1100px', margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
-          <div className="scroll-reveal">
-            <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>The Team</div>
-            <h2 className="section-heading" style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: '700',
-              letterSpacing: '-0.025em', lineHeight: '1.1', marginBottom: '24px'
-            }}>
-              Built by 5 students collaborating
-            </h2>
-            <p style={{ fontSize: '15px', color: '#666', lineHeight: '1.8', fontWeight: '400', marginBottom: '32px' }}>
-              This is our group project - a full-stack AI application built 
-              with Java, Python, and React. From architecture to deployment, 
-              every layer was designed and coded by our team.
-            </p>
-            <div style={{ display: 'flex', gap: '40px' }}>
-              {[['5', 'Team members'], ['3', 'Tech stacks'], ['0', 'Monthly cost']].map(([val, label]) => (
-                <div key={label}>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '36px', fontWeight: '700', color: '#000', letterSpacing: '-0.02em' }}>{val}</div>
-                  <div style={{ fontSize: '12px', color: '#999', fontWeight: '500', marginTop: '4px' }}>{label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="photo-card scroll-reveal" style={{ height: 'clamp(300px, 40vw, 480px)', borderRadius: '16px' }}>
-            <img src="/photo2.jpg" alt="Team working" />
-          </div>
-        </div>
-      </section>
+      <section id="team" style={{ padding: '120px 24px', background: '#fafafa', borderTop: '1px solid #f0f0f0' }}>
+  <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+    <div className="scroll-reveal" style={{ marginBottom: '64px' }}>
+      <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>The Team</div>
+      <h2 className="section-heading" style={{
+        fontFamily: "'DM Sans', sans-serif",
+        fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: '700',
+        letterSpacing: '-0.025em', lineHeight: '1.05', maxWidth: '600px'
+      }}>
+        Built by 5 students, together.
+      </h2>
+    </div>
 
-      <section style={{ padding: '100px 24px', borderTop: '1px solid #f0f0f0', textAlign: 'center' }}>
-        <div className="scroll-reveal" style={{ marginBottom: '48px' }}>
-          <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>Built with</div>
-          <h2 style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 'clamp(32px, 4vw, 52px)', fontWeight: '700',
-            letterSpacing: '-0.025em'
-          }}>Serious tech. Zero cost.</h2>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'start' }}>
+      <div className="scroll-reveal">
+        <div className="photo-card" style={{ height: 'clamp(300px, 38vw, 460px)', borderRadius: '16px', marginBottom: '32px' }}>
+          <img src="/photo2.jpg" alt="Team working" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} />
         </div>
-        <div className="tech-grid scroll-reveal" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', maxWidth: '800px', margin: '0 auto' }}>
-          {['Spring Boot 3.2','Java 17','React 18','Groq Whisper','LLaMA 3.3 70B','Docker','Python 3','Render','Vercel'].map(t => (
-            <span key={t} className="tech-badge">{t}</span>
-          ))}
+        <p style={{ fontSize: '15px', color: '#666', lineHeight: '1.8', fontWeight: '400' }}>
+          A full-stack AI application built with Java, Python, and React. 
+          From architecture to deployment, every layer was designed and coded by our team.
+        </p>
+      </div>
+
+      <div className="scroll-reveal" style={{ paddingTop: '12px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', border: '1px solid #e5e5e5', borderRadius: '16px', overflow: 'hidden' }}>
+          <div style={{ padding: '28px 24px', background: '#fff', borderRight: '1px solid #e5e5e5', borderBottom: '1px solid #e5e5e5' }}>
+            <div style={{ fontSize: '36px', fontWeight: '700', color: '#000', letterSpacing: '-0.03em', lineHeight: '1' }}>5</div>
+            <div style={{ fontSize: '13px', fontWeight: '600', color: '#000', marginTop: '8px' }}>Team members</div>
+          </div>
+          <div style={{ padding: '28px 24px', background: '#fff', borderBottom: '1px solid #e5e5e5' }}>
+            <div style={{ fontSize: '36px', fontWeight: '700', color: '#000', letterSpacing: '-0.03em', lineHeight: '1' }}>3</div>
+            <div style={{ fontSize: '13px', fontWeight: '600', color: '#000', marginTop: '8px' }}>Tech stacks</div>
+            <div style={{ fontSize: '12px', color: '#999', marginTop: '4px' }}>Java · Python · React</div>
+          </div>
+          <div style={{ padding: '28px 24px', background: '#fff', borderRight: '1px solid #e5e5e5' }}>
+            <div style={{ fontSize: '36px', fontWeight: '700', color: '#000', letterSpacing: '-0.03em', lineHeight: '1' }}>₹0</div>
+            <div style={{ fontSize: '13px', fontWeight: '600', color: '#000', marginTop: '8px' }}>Monthly cost</div>
+            <div style={{ fontSize: '12px', color: '#999', marginTop: '4px' }}>Fully free to run</div>
+          </div>
+          <a href="https://github.com/sandeshgorde/audio-action-extractor-meetings" target="_blank" rel="noreferrer" style={{ padding: '28px 24px', background: '#000', textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', cursor: 'pointer', minHeight: '120px' }}>
+            <div style={{ fontSize: '11px', color: '#555', fontWeight: '500', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Open source</div>
+            <div>
+              <div style={{ fontSize: '15px', fontWeight: '600', color: '#fff', marginBottom: '4px' }}>↗ View on GitHub</div>
+              <div style={{ fontSize: '12px', color: '#666' }}>audio-action-extractor-meetings</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section style={{ padding: '120px 24px', borderTop: '1px solid #f0f0f0', background: '#fff' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div className="scroll-reveal" style={{ marginBottom: '64px' }}>
+            <div style={{ fontSize: '11px', fontWeight: '500', color: '#999', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '20px' }}>Built with</div>
+            <h2 style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: '700',
+              letterSpacing: '-0.025em', lineHeight: '1.05'
+            }}>Zero cost.</h2>
+          </div>
+
+          <div className="scroll-reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px', border: '1px solid #e5e5e5', borderRadius: '16px', overflow: 'hidden' }}>
+            {[
+              { name: 'Spring Boot 3.2', role: 'Backend framework', tag: 'Java' },
+              { name: 'React 18', role: 'Frontend UI', tag: 'JavaScript' },
+              { name: 'Groq Whisper', role: 'Audio transcription', tag: 'AI' },
+              { name: 'LLaMA 3.3 70B', role: 'Action extraction', tag: 'AI' },
+              { name: 'Python 3', role: 'Transcription script', tag: 'Script' },
+              { name: 'Docker', role: 'Containerization', tag: 'DevOps' },
+              { name: 'Render', role: 'Backend hosting', tag: 'Free tier' },
+              { name: 'Vercel', role: 'Frontend hosting', tag: 'Free tier' },
+              { name: 'Java 17', role: 'Core language', tag: 'Language' },
+            ].map(({ name, role, tag }) => (
+              <div key={name} style={{ padding: '28px 24px', background: '#fff', borderBottom: '1px solid #e5e5e5', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '24px', minHeight: '120px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <span style={{ fontSize: '11px', color: '#bbb', fontWeight: '500', textTransform: 'uppercase', letterSpacing: '0.08em' }}>{tag}</span>
+                </div>
+                <div>
+                  <div style={{ fontSize: '15px', fontWeight: '600', color: '#000', marginBottom: '4px' }}>{name}</div>
+                  <div style={{ fontSize: '13px', color: '#999', fontWeight: '400' }}>{role}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
